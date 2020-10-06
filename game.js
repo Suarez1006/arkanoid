@@ -6,14 +6,15 @@ var config = {
     height: 930,
   },
 
-  physics: { default: "arcade", arcade: { gravity: { y: 0 }, debug: false } },
-  scene: [niveles],
+  physics: { default: "arcade", arcade: { gravity: { y: 0 }, debug: true } },
+  scene: [carga, nivel1],
 };
 
 var game = new Phaser.Game(config);
 
 var paleta;
-var pelota;
+var bola;
+var play = 0;
 
 var cursors;
 var keySpace;
